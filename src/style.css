@@ -1,8 +1,10 @@
+:root {
+  --color-red: #f55a5a;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +12,104 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.shadow {
+  -webkit-box-shadow: 10px 10px 43px 0 rgba(119,119,119,.4);
+  -moz-box-shadow: 10px 10px 43px 0 rgba(119,119,119,.4);
+  box-shadow: 10px 10px 43px 0 rgba(119,119,119,.4);
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ccc;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  background-color: var(--color-red);
+  font-weight: 500;
+  font-size: 14.4608px;
+  line-height: 18px;
+  letter-spacing: -0.075em;
+  margin-bottom: 45px;
+  border-radius: 7px 7px 0 0;
+}
+
+.navbar i {
+  margin-right: 5px;
+}
+
+.journal--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 7px;
+}
+
+.entry--container {
+  display: flex;
+  height: 200px
+}
+
+.entry--img img {
+  width: 125px;
+  height: 168px;
+  border-radius: 5px;
+  margin-right: 25px;
+  object-fit: cover;
+}
+
+.entry--location span {
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 12px;
+  letter-spacing: 0.17em;
+  color: #2B283A;
+}
+
+.entry--location i {
+  color:var(--color-red);
+}
+
+.entry--maplink a {
+  font-size: 10.24px;
+  line-height: 12px;
+  /* identical to box height */
+  color: #918E9B;
+  margin-left: 25px;
+}
+
+.entry--text h3 {
+  margin: 10px 0;
+}
+
+.entry--dates {
+  font-weight: 700;
+  font-size: 10.24px;
+  line-height: 12px;
+  color: #2B283A;
+  margin-bottom: 7px;
+}
+
+.entry--description {
+  width: 326px;
+  height: 45px;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 150%;
+  /* or 15px */
+  color: #2B283A;
 }
